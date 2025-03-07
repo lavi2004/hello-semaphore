@@ -12,3 +12,6 @@ blocks:
           commands:
             - checkout
             - 'echo "Hello, world!"'
+        - name: 'Job #2'
+          commands:
+            - '"Hi,everyone"'
