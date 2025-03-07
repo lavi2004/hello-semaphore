@@ -2,20 +2,20 @@ version: v1.0
 name: continuous Integration Pipeline
 agent:
   machine:
-    type: f1-standard-2
-    os_image: ubuntu2204
+    type: e1-standard-2
+    os_image: ubuntu2004
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
-            - 'echo "Hello, world!"'
+            - npm install
+          parallelism: 4
         - name: 'Job #2'
           commands:
-            - checkout
-            - 'echo "Hello, world!"'
+            - npm install
+          parallelism: 4
       env_vars:
         - name: HELOO
           value: world
@@ -24,4 +24,4 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - '"Hello, world!"'
+            - npm install
