@@ -17,8 +17,8 @@ blocks:
             - npm install
           parallelism: 4
       env_vars:
-        - name: HELOO
-          value: world
+        - name: npm
+          value: install
   - name: 'Block #2'
     task:
       jobs:
