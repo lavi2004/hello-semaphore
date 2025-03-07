@@ -24,7 +24,8 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - Hello world
+            - checkout
+            - 'echo"Hello,world!"'
       env_vars:
         - name: Hello
           value: world
