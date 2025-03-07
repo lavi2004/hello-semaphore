@@ -10,16 +10,19 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - npm install
+            - Hello world
         - name: 'Job #2'
           commands:
-            - npm install
+            - Hello world
       env_vars:
-        - name: npm
-          value: install
+        - name: Hello
+          value: world
   - name: 'Block #2'
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - npm install
+            - Hello world
+      env_vars:
+        - name: Hello
+          value: world
