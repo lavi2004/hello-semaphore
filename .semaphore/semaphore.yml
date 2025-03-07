@@ -14,7 +14,8 @@ blocks:
             - 'echo"Hello,world!"'
         - name: 'Job #2'
           commands:
-            - echo"Hello world!"
+            - checkout
+            - 'echo"Hello,world!"'
       env_vars:
         - name: Hello
           value: world
