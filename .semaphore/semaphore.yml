@@ -11,11 +11,9 @@ blocks:
         - name: 'Job #1'
           commands:
             - npm install
-          parallelism: 4
         - name: 'Job #2'
           commands:
             - npm install
-          parallelism: 4
       env_vars:
         - name: npm
           value: install
