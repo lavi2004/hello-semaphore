@@ -16,3 +16,6 @@ blocks:
           commands:
             - checkout
             - 'echo "Hello, world!"'
+      env_vars:
+        - name: HELOO
+          value: world
