@@ -11,4 +11,5 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - hello
+            - checkout
+            - 'echo"hello,world!"'
