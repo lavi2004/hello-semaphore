@@ -11,10 +11,10 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - '"Hello,world!"'
+            - 'echo"Hello,world!"'
         - name: 'Job #2'
           commands:
-            - '"Hello world!"'
+            - echo"Hello world!"
       env_vars:
         - name: Hello
           value: world
